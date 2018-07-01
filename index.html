@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snaaap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- BOOTSTRAP 4-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- CAROUSEL TEAM CSS-->
+<link rel="stylesheet" href="Styles/cardslider.css">
+<!--BOOTSTRAP FONT AWESOME-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<!--CUSTOM CSS-->
+<link rel="stylesheet" href="Styles/style.css">
+<!--Blog slider-->
+<link rel="stylesheet" href="Styles/flexslider.css" type="text/css" media="screen" property="" />
+<!--CAROUSEL CLIENTS-->
+ <link href="Styles/owl.carousel.css" rel='stylesheet' type='text/css' />  
+ <link rel="shortcut icon" type="image/png" href="favicon.png">
+<!--ANGULAR JS-->
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.missn.js" type="text/javascript"></script>
+</head>
+
+ <body ng-app="snapWeb" ng-controller="snapController" >
+    <div ng-include="'Pages/header.html'"> </div>
+    <div ng-include="'Pages/about.html'"> </div>
+    <div ng-include="'Pages/video.html'"> </div>
+    <div ng-include="'Pages/services.html'"></div>
+    <br><br><br><br>
+    <!--team-->
+    <div class="jarallax team agile-section team-up" id="team">
+      <div class="container">
+        <div class="col-md-5 col-sm-5 w3_agileits-team-head" style="display: inline-block;">
+          <div class="head_title">
+             <br><br><br><br><h3 style="color: #FFF;">OUR TEAM</h3>
+            <div class="separator"></div>
+          </div>
+            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit Mauris ex nulla aliquam ornare facilisis nec Sit accusamus</p>
+        </div>
+        <div class="col-md-5 col-sm-5 team-row" style=" display: inline-block;">
+          <section class="carousel slide" data-ride="carousel" id="postsCarousel" >
+            <div class="container p-t-0 m-t-2 carousel-inner" style="padding-top: 60px;">
+                <div class="row row-equal carousel-item active m-t-0">
+
+                    <div class="col-md-4" ng-repeat="snap in snaps">
+                       <div class="">
+                          <div class=" team-w3-agileits">
+                            <div class="ih-item circle effect3 bottom_to_top">
+                                <div class="img"><img ng-src="Assets/Images/{{snap.image}}.png" alt="img"></div>
+                                <div class="info">
+                              <h3>{{snap.position}} </h3>        
+                              <ul class="social-icons">
+                                <li><a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="twt"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="ggl"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                              </ul>
+                                </div>
+                          </div>
+                           <h5> {{ snap.name }} </h5> 
+                          <p>{{snap.description}}</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-equal carousel-item m-t-0">
+                    <div class="col-md-4">
+                       <div class="">
+                          <div class=" team-w3-agileits">
+                            <div class="ih-item circle effect3 bottom_to_top">
+                                <div class="img"><img src="Assets/Images/team4.png" alt="img"></div>
+                                <div class="info">
+                              <h3>CAO</h3>        
+                              <ul class="social-icons">
+                                <li><a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="twt"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="ggl"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                              </ul>
+                                </div>
+                          </div>
+                           <h5>See Tho Yong Yang </h5> 
+                          <p>Dog Owner and Realist</p>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                       <div class="">
+                          <div class=" team-w3-agileits">
+                            <div class="ih-item circle effect3 bottom_to_top">
+                                <div class="img"><img src="Assets/Images/team5.png" alt="img"></div>
+                                <div class="info">
+                              <h3> Product Manager</h3>        
+                              <ul class="social-icons">
+                                <li><a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="twt"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="ggl"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                              </ul>
+                                </div>
+                          </div>
+                           <h5>Matthew Tan</h5> 
+                          <p>Angling Expert and Designer</p>
+                          </div>
+                        </div>
+                    </div>
+
+
+                     <div class="col-md-4">
+                       <div class="">
+                          <div class=" team-w3-agileits">
+                            <div class="ih-item circle effect3 bottom_to_top">
+                                <div class="img"><img src="Assets/Images/team1.png" alt="img"></div>
+                                <div class="info">
+                              <h3> CEO</h3>        
+                              <ul class="social-icons">
+                                <li><a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="twt"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="ggl"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                              </ul>
+                                </div>
+                          </div>
+                           <h5>Shaun Tan</h5> 
+                          <p>ADHD Dreamer and Doer</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <a class="btn prev" href="" title="go back">
+                          <i class="fa fa-lg fa-chevron-left"></i></a>
+                        <a class="btn next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+      </div>
+    </div>
+    <!--//team--> 
+    <div ng-include="'Pages/blog.html'"> </div>
+    <!-- /testimonials-->
+    <div class="agile_testimonials">
+      <div class="col-md-6 testmonial_agile_info">
+          <div class="head_title" style="padding-left: 140px;">
+          <br><br><h3 style="color: #FFF;">WHAT CLIENTS SAY</h3>
+          <div class="separator"></div>
+          </div>
+      </div>
+      <div class="clients_agile_slider" >
+        <div id="owl-demo" class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="agile_tesimonials_content">
+              <div class="about-midd-main">
+                <img class="agile-img" src="Assets/images/client1.png" alt=" " class="img-responsive">
+               <br><br> <h4 class="title-clients">Kelvin Tan, Strategist</h4>
+             
+                <span class="fa fa-quote-left" aria-hidden="true"></span><p> Our team is excited to be part of this platform that offers us the capability to promote to new customers our innovative dinning concepts and products.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="agile_tesimonials_content">
+              <div class="about-midd-main">
+                <img class="agile-img" src="Assets/images/client2.png" alt=" " class="img-responsive">
+              <br><br>  <h4 class="title-clients">Darwin Koh, Director</h4>
+               <span class="fa fa-quote-left" aria-hidden="true"></span> <p>Snaaap is an innovative application that rewards our customers every time they spend with us. We look forward to growing our business with Snaaap.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="agile_tesimonials_content">
+              <div class="about-midd-main">
+                <img class="agile-img" src="Assets/images/client3.png" alt=" " class="img-responsive">
+               <br><br> <h4 class="title-clients">Wilson Neo</h4>
+
+                <span class="fa fa-quote-left" aria-hidden="true"></span><p> Snaaap is an important partner for Affinite to reach our customers with our offer of broad financial assurance solutions. We look forward to keeping our customers engaged on our platform powered by Snaaap.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+    <!-- //testimonials-->
+    <div ng-include="'Pages/maps.html'"> </div>
+    <div ng-include="'Pages/footer.html'"> </div>
+
+</body>
+   
+  <!-- BOOTSTRAP 4 JS JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <!-- UI ANGULAR BOOTSTRAP-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.min.js"></script>
+  <script src="app.js"></script>
+  <script src="AngularJS-Scripts/snapController.js"></script>
+   <script src="AngularJS-Scripts/snapFactory.js"></script>
+
+<!-- CAROUSEL OF BLOG-->
+<script>
+   (function($){
+     "use strict";
+     $('.next').click(function(){ $('.carousel').carousel('next');return false; });
+     $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+   }) 
+   (jQuery);
+</script>
+
+  <!-- JavaScripts -->
+  <script type="text/javascript" src="Controllers/jquery-2.1.4.min.js"></script>
+
+  <!-- flexSlider -->
+    <script defer src="Controllers/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){
+        $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+        });
+      });
+
+    </script>
+  <!-- //flexSlider -->
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){   
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+  });
+</script>
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+ 
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+  <!-- carousel -->
+  <script src="Controllers/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo").owlCarousel({
+        items: 1,
+        itemsDesktop: [768, 1],
+        itemsDesktopSmall: [414, 1],
+        lazyLoad: true,
+        autoPlay: true,
+        navigation: true,
+
+        navigationText: false,
+        pagination: true,
+
+      });
+
+    });
+  </script>
+  <!-- //carousel -->
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+
+
+ 
+
+</html>
+
